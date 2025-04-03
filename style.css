@@ -14,6 +14,7 @@
     --sherpa-blue: #00474B;
     --Topaz: #26C2AE;
     --Beetle-Green: #547878;
+    --regent-grey: #7F9D9F;
 }
 body{
     font-size:1.6rem;
@@ -71,6 +72,7 @@ input::placeholder{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.6rem;
+    margin-top: .8rem;
 
 button{ 
     font-size: 2.4rem;
@@ -99,4 +101,46 @@ input:focus{
     outline: 2px solud var(--Topaz);
 }
 }
+}
+
+.results{
+    background: var(--sherpa-blue);
+    border-radius: 1.5rem;
+    padding: 2.4rem;
+
+.amount,
+.total{
+display:flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom:2.5rem;
+
+p{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.3rem;
+
+    span{
+        color: var(--regent-grey);
+    }
+
+}
+
+strong{
+    color: var(--Topaz);
+font-size: 3.2rem;
+}
+}
+
+bottom{
+    padding-block: .9rem;
+    width: 100%;
+    border: none;
+    background: var(--Topaz);
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color:var(--sherpa-blue);
+}
+
 }
